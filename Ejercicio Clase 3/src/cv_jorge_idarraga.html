@@ -32,6 +32,21 @@
       border-radius: 10px;
       margin-top: 10px;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
   </style>
 </head>
 <body>
@@ -49,6 +64,7 @@
     <ul>
       <li><a href="#perfil">Perfil</a></li>
       <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#gustos">Gustos</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
@@ -89,6 +105,36 @@
       </li>
     </ol>
   </article>
+
+  <section id="gustos">
+    <h2>Gustos y Preferencias</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Actividad</th>
+          <th>Motivo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fútbol</td>
+          <td>Me gusta compartir con amigos y seguir los partidos los fines de semana.</td>
+        </tr>
+        <tr>
+          <td>Roller</td>
+          <td>Disfruto de recorrer parques y mantenerme activo al aire libre.</td>
+        </tr>
+        <tr>
+          <td>Bicicleta</td>
+          <td>Es una forma saludable y ecológica de moverme por la ciudad.</td>
+        </tr>
+        <tr>
+          <td>Ir al cine</td>
+          <td>Me encanta disfrutar de buen cine y desconectar de la rutina.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
   <aside id="contacto">
     <h2>Datos Personales</h2>
