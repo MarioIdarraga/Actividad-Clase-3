@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura del Documento HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+    }
+    header, nav, section, article, aside, footer {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    img {
+      margin: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Conociendo la estructura básica de HTML</h1>
+    <p>HTML (HyperText Markup Language) es el lenguaje principal utilizado para estructurar contenido en la web. Conocer la organización de sus etiquetas es fundamental para crear sitios bien organizados y accesibles.</p>
+    <p>En este documento veremos el uso correcto de etiquetas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> y <code>&lt;footer&gt;</code>.</p>
+  </header>
+
+  <nav>
+    <h2>Barra de navegación</h2>
+    <p>La etiqueta <code>&lt;nav&gt;</code> define un conjunto de enlaces de navegación que ayudan al usuario a recorrer las distintas secciones del sitio web. Es importante para la usabilidad y también para los motores de búsqueda que indexan el sitio.</p>
+    <ul>
+      <li><a href="#seccion">Sección</a></li>
+      <li><a href="#articulo">Artículo</a></li>
+      <li><a href="#aside">Complemento</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#footer">Pie</a></li>
+    </ul>
+  </nav>
+
+  <section id="seccion">
+    <h2>Sección principal</h2>
+    <p>El elemento <code>&lt;section&gt;</code> se usa para dividir el contenido en bloques temáticos. Cada sección puede tener su propio encabezado y se recomienda cuando el contenido sigue una estructura lógica o narrativa.</p>
+    <p>Por ejemplo, una página sobre historia puede tener secciones por siglos, y una tienda online puede tener secciones para cada categoría de productos.</p>
+  </section>
+
+  <article id="articulo">
+    <h2>¿Qué es un artículo en HTML?</h2>
+    <p>La etiqueta <code>&lt;article&gt;</code> define un contenido que tiene sentido por sí mismo y que podría ser redistribuido de manera independiente. Es común su uso en blogs, noticias, comentarios y redes sociales.</p>
+    <p>Este elemento es ideal cuando el contenido tiene un título, cuerpo y hasta autor propio. Se puede anidar dentro de secciones y también puede contener otras etiquetas como listas, imágenes o citas.</p>
+    <h3>Ejemplo de uso:</h3>
+    <pre>
+&lt;article&gt;
+  &lt;h2&gt;Cómo cuidar tus plantas en verano&lt;/h2&gt;
+  &lt;p&gt;El calor puede afectar a tus plantas, pero con estos consejos lograrás mantenerlas saludables...&lt;/p&gt;
+&lt;/article&gt;
+    </pre>
+    <p>Esto permite crear contenido bien organizado y fácil de compartir.</p>
+  </article>
+
+  <aside id="aside">
+    <h2>Contenido complementario</h2>
+    <p>El elemento <code>&lt;aside&gt;</code> contiene información secundaria o de apoyo. Por lo general se sitúa al costado del contenido principal, pero también puede aparecer dentro de artículos.</p>
+    <p>Se usa para colocar listas de enlaces relacionados, glosarios, definiciones, banners o notas aclaratorias. Es útil para ofrecer contexto sin interrumpir el hilo principal del contenido.</p>
+  </aside>
+
+  <section id="galeria">
+    <h2>Galería de imágenes</h2>
+    <p>En esta sección se muestran 4 imágenes utilizando rutas relativas. Las imágenes deben estar dentro de una carpeta llamada <code>imagenes/</code>, ubicada en el mismo directorio que este archivo HTML.</p>
+    <div>
+        <img src="../image1.jpg" alt="Imagen 1" width="200">
+        <img src="image2.jpg" alt="Imagen 2" width="200">
+        <img src="Assets/image3.jpg" alt="Imagen 3" width="200">
+        <img src="Assets/extras/image4.jpg" alt="Imagen 4" width="200">
+    </div
+  </section>
+
+  <footer id="footer">
+    <h2>Pie de página</h2>
+    <p>El <code>&lt;footer&gt;</code> suele ubicarse al final del documento o de una sección. Contiene información como el autor, enlaces legales, contacto o fecha de publicación.</p>
+    <p>También se puede usar dentro de artículos o secciones específicas, no solo al final de la página completa.</p>
+    <p>&copy; 2025 Documento de aprendizaje sobre estructura HTML. Sitio creado con fines educativos.</p>
+  </footer>
+
+</body>
+</html>
